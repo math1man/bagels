@@ -38,4 +38,43 @@
     };
   });
 
+  app.controller('HomeController', function($scope, $interval) {
+    var verbs = [
+      'dance',
+      'try something new',
+      'catch the game',
+      'paint',
+      'visit a polar bear',
+      'jam',
+      'experience nature',
+      'snowboard',
+      'seize the day',
+      'discover',
+      'get outside',
+      'explore',
+      'change the world',
+      'hike',
+      'feel the city',
+      'cheer',
+      'be amazed',
+      'party',
+      'experience history',
+      'watch a film'
+    ];
+
+    var index = 0;
+
+    $interval(function() {
+      index++;
+      if (index >= verbs.length) {
+        index = 0;
+      }
+    }, 1000);
+
+    $scope.getVerb = function() {
+      return verbs[index];
+    }
+
+  });
+
 })();
