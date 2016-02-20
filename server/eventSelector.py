@@ -48,13 +48,13 @@ class EventCollection(messages.Message):
 
 
 STORED_EVENTS = EventCollection(items=[
-    Event(name = "hella fun",
-          url = "https://www.google.com",
-          cost = "100",
-          groupSize = "4",
-          duration = "3",
-          distance = "5",
-          description = "this is dope yo"),
+    Event(name = "Minnesota Wild v. Chicago Blackhawks",
+          url = "http://espn.go.com/video/clip?id=14808471&ex_cid=espnapi_public",
+          cost = "115",
+          groupSize = "2-4",
+          duration = "2.5-3  hours",
+          distance = "5 miles",
+          description = "Minnesota hosts Chicago in Minnesota's first-ever outdoor hockey game.  The two central-division rivals square off at TCF Bank Stadium in Minneapolis, MN "),
     Event(name = "asdf fun",
           url = "https://www.yahoo.com",
           cost = "22",
