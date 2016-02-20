@@ -1,0 +1,41 @@
+<ion-view view-title="Activity" ng-controller="ActivityController">
+  <ion-nav-buttons side="right">
+    <a class="button button-icon" href="#/settings">
+      <i class="icon ion-gear-a"></i>
+    </a>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="card">
+      <div class="item item-text-wrap text-center large-font" ng-click="goWebsite()">
+        {{activity('name')}}
+      </div>
+      <div class="item item-divider text-center" ng-click="toggleDesc()">
+        Tell me {{showDesc?'less':'more!'}}
+      </div>
+      <div class="item item-text-wrap" ng-show="showDesc">
+        {{activity('description')}}
+      </div>
+    </div>
+    <div class="list">
+      <div class="item item-icon-left">
+        <i class="icon ion-social-usd"></i>
+        Cost: {{activity('cost')}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-ios-people"></i>
+        Group Size: {{activity('groupSize')}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-android-time"></i>
+        Duration: {{activity('duration')}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-location"></i>
+        Distance: {{activity('distance')}}
+      </div>
+      <div class="item">
+        <div class="button button-bar button-positive">Nah, maybe something else</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
