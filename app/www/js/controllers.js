@@ -79,7 +79,7 @@
 
     $scope.goWebsite = function() {
       if (Activity.activity.url.length > 0) {
-        $cordovaInAppBrowser.open(Activity.activity.url, '_system')
+        $cordovaInAppBrowser.open(Activity.activity.url, '_system'); // TODO this doesn't seem to work on real phones
       }
     };
 
