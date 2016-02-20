@@ -16,7 +16,7 @@
 
   });
 
-  app.controller('ActivityController', function($scope, $cordovaInAppBrowser, Activity) {
+  app.controller('ActivityController', function($scope, $cordovaInAppBrowser, Activity, $ionicActionSheet, $timeout) {
 
     $scope.showDesc = false;
 
@@ -31,7 +31,6 @@
     $scope.activity = function(field) {
       return Activity[field];
     };
-
 
     $scope.changeView = function(){
       $state.go('settings')
@@ -74,6 +73,7 @@
     $scope.getVerb = function() {
       return verbs[index];
     }
+
 
   });
 
