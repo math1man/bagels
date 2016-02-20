@@ -2,5 +2,8 @@ app/platforms
 app/node_modules
 .idea
 
+whatdo/target
+whatdo/eclipse-launch-profiles
+
 */.DS_Store
 *.iml
