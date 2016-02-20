@@ -1,4 +1,4 @@
-<ion-view view-title="Settings">
+<ion-view view-title="Preferences" ng-controller="SettingsController">
   <ion-nav-buttons side="left">
 
   </ion-nav-buttons>
@@ -7,7 +7,14 @@
   </ion-nav-buttons>
   <ion-content>
     <div class="list">
-      <ion-checkbox class="item-checkbox-right checkbox-positive">Put setting here</ion-checkbox>
+      <ion-checkbox class="item-checkbox-right checkbox-positive" ng-model="preferences['art']">Art</ion-checkbox>
+      <ion-checkbox class="item-checkbox-right checkbox-positive" ng-model="preferences['history']">History</ion-checkbox>
+      <ion-checkbox class="item-checkbox-right checkbox-positive" ng-model="preferences['outdoors']">Outdoors</ion-checkbox>
+      <ion-checkbox class="item-checkbox-right checkbox-positive" ng-model="preferences['shopping']">Shopping</ion-checkbox>
+      <ion-checkbox class="item-checkbox-right checkbox-positive" ng-model="preferences['shows']">Shows</ion-checkbox>
+      <ion-checkbox class="item-checkbox-right checkbox-positive" ng-model="preferences['social']">Social</ion-checkbox>
+      <ion-checkbox class="item-checkbox-right checkbox-positive" ng-model="preferences['sports']">Sports</ion-checkbox>
+      <ion-checkbox class="item-checkbox-right checkbox-positive" ng-model="preferences['volunteering']">Volunteering</ion-checkbox>
     </div>
 
   </ion-content>

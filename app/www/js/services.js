@@ -13,4 +13,15 @@
         'The Walker is considered one of America\'s premier museums for modern art.';
   });
 
+  app.service('Preferences', function() {
+    this.art = true;
+    this.history = true;
+    this.outdoors = true;
+    this.shopping = true;
+    this.shows = true;
+    this.sports = true;
+    this.social = true;
+    this.volunteering = true;
+  })
+
 })();

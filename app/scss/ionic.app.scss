@@ -29,7 +29,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 .item {
-  background-color: #e2f0fa;
+  background-color: transparent;
 }
 
 ion-content {
@@ -40,7 +40,7 @@ ion-content {
   height: 100%;
 }
 
-.just-want {
+.borderless {
   border: none;
 }
 
@@ -53,6 +53,8 @@ ion-content {
   background: url(../img/dots_top.png) no-repeat center top;
   background-size: 100%;
   height: 45vw;
+  margin-bottom: -15vw;
+  border: none;
 }
 
 .dots-bottom {

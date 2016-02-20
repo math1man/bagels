@@ -77,4 +77,10 @@
 
   });
 
+  app.controller('SettingsController', function($scope, Preferences) {
+
+    $scope.preferences = Preferences;
+
+  });
+
 })();
