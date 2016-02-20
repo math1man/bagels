@@ -15,6 +15,9 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$positive:                        #74b6dd !default;
+$energized:                       #fe9b3f !default;
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
@@ -23,12 +26,41 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 .large-font {
   font-size: xx-large;
+  line-height: normal;
 }
 
-.mega-padding{
+.item {
+  background-color: transparent;
+}
 
-  padding-top:30%;
-  padding-bottom:40%;
-  height:300%;
+ion-content {
+  background-color: #e2f0fa;
+}
+
+.logo {
+  height: 100%;
+}
+
+.borderless {
+  border: none;
+}
+
+.half-image {
+  width: 40%;
+  margin: auto auto 20vw;
+}
+
+.dots-top {
+  background: url(../img/dots_top.png) no-repeat center top;
+  background-size: 100%;
+  height: 45vw;
+  margin-bottom: -15vw;
+  border: none;
+}
+
+.dots-bottom {
+  background: url(../img/dots_bottom.png) no-repeat center bottom;
+  background-size: 100%;
+  height: auto;
 }
 
