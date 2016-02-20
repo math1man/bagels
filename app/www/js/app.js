@@ -32,6 +32,10 @@
       .state('activity', {
         url: '/activity',
         templateUrl: 'templates/activity.html'
+      })
+      .state('settings', {
+        url: '/settings',
+        templateUrl: 'templates/settings.html'
       });
 
     $urlRouterProvider.otherwise('/home');

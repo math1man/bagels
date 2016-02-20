@@ -8,6 +8,7 @@
       if (!$state.is('home')) {
         $state.go('home');
       }
+<<<<<<< Updated upstream
     };
 
     $scope.showSettings = function() {
@@ -33,6 +34,12 @@
     };
 
 
+=======
+    }
+    $scope.changeView = function(){
+      $state.go('settings')
+    }
+>>>>>>> Stashed changes
   });
 
 })();
