@@ -1,0 +1,6 @@
+app/platforms
+app/node_modules
+.idea
+
+*/.DS_Store
+*.iml
