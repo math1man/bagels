@@ -1,21 +1,21 @@
 <ion-view view-title="WHATDO" ng-controller="HomeController">
+  <!--<ion-nav-title>-->
+    <!--<img src="../img/logo.png">-->
+  <!--</ion-nav-title>-->
   <ion-nav-buttons side="right">
     <a class="button button-icon" href="#/settings">
       <i class="icon ion-gear-a"></i>
     </a>
   </ion-nav-buttons>
-  <ion-content>
-    <div class="list">
-      <div class="item text-center">
-        <h1>I just want to</h1>
-        <h1>{{getVerb()}}</h1>
-      </div>
-      <a class="item text-center" href="#/activity">
-        <button class="button button-energized">
-          Do Something
-        </button>
-      </a>
+  <ion-content class="color-background">
+    <div class="item dots-top">
     </div>
-
+    <div class="item text-center">
+      <h1>I just want to</h1>
+      <h1>{{getVerb()}}</h1>
+    </div>
   </ion-content>
+  <a class="bar bar-footer dots-bottom" href="#/activity">
+    <img class="half-image" src="img/do_something.png">
+  </a>
 </ion-view>
