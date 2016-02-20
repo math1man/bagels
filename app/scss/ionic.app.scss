@@ -24,6 +24,13 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700);
+
+.bar .title {
+  font-family: Quicksand, sans-serif;
+  font-size: x-large;
+}
+
 .large-font {
   font-size: xx-large;
   line-height: normal;
@@ -46,7 +53,7 @@ ion-content {
 }
 
 .half-image {
-  width: 40%;
+  width: 40vw;
   margin: auto auto 20vw;
 }
 
@@ -61,6 +68,29 @@ ion-content {
 .dots-bottom {
   background: url(../img/dots_bottom.png) no-repeat center bottom;
   background-size: 100%;
-  height: auto;
+  height: 78vw;
+}
+
+.spinner {
+  -webkit-animation:spin 3s linear infinite;
+  animation:spin 3s linear infinite;
+  width: 50%;
+  margin: 25%;
+
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+      }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+      }
+  }
+
 }
 
