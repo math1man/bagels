@@ -28,6 +28,10 @@
       .state('home', {
         url: '/home',
         templateUrl: 'templates/home.html'
+      })
+      .state('activity', {
+        url: '/activity',
+        templateUrl: 'templates/activity.html'
       });
 
     $urlRouterProvider.otherwise('/home');
