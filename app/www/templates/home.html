@@ -1,16 +1,15 @@
 <ion-view view-title="WHATDO" ng-controller="HomeController">
-  <!--<ion-nav-title>-->
-    <!--<img src="../img/logo.png">-->
-  <!--</ion-nav-title>-->
   <ion-nav-buttons side="right">
     <a class="button button-icon" href="#/settings">
       <i class="icon ion-gear-a"></i>
     </a>
   </ion-nav-buttons>
-  <ion-content class="color-background">
-    <div class="item dots-top">
-    </div>
-    <div class="item text-center">
+  <ion-nav-title>
+    <img class="logo" src="../img/logo.png">
+  </ion-nav-title>
+  <ion-content class="color-background" scroll="false">
+    <div class="item dots-top"></div>
+    <div class="item text-center just-want">
       <h1>I just want to</h1>
       <h1>{{getVerb()}}</h1>
     </div>

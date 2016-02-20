@@ -15,6 +15,7 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$positive:                        #74b6dd !default;
 $energized:                       #fe9b3f !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
@@ -33,6 +34,14 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 ion-content {
   background-color: #e2f0fa;
+}
+
+.logo {
+  height: 100%;
+}
+
+.just-want {
+  border: none;
 }
 
 .half-image {
