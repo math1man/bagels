@@ -17,10 +17,22 @@
       </div>
     </div>
     <div class="list">
-      <div class="item">Cost: {{activity('cost')}}</div>
-      <div class="item">Group Size: {{activity('groupSize')}}</div>
-      <div class="item">Duration: {{activity('duration')}}</div>
-      <div class="item">Distance: {{activity('distance')}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-social-usd"></i>
+        Cost: {{activity('cost')}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-ios-people"></i>
+        Group Size: {{activity('groupSize')}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-android-time"></i>
+        Duration: {{activity('duration')}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-location"></i>
+        Distance: {{activity('distance')}}
+      </div>
     </div>
   </ion-content>
 </ion-view>
