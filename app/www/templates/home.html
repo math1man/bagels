@@ -4,9 +4,6 @@
       <i class="icon ion-gear-a"></i>
     </a>
   </ion-nav-buttons>
-  <ion-nav-title>
-    <img class="logo" src="../img/logo.png">
-  </ion-nav-title>
   <ion-content class="color-background" scroll="false">
     <div class="item dots-top"></div>
     <div class="item text-center borderless">
@@ -14,7 +11,7 @@
       <h1>{{getVerb()}}</h1>
     </div>
   </ion-content>
-  <a class="bar bar-footer dots-bottom" href="#/activity">
+  <a class="bar bar-footer dots-bottom" href="#/activity" ng-click="whatDo()">
     <img class="half-image" src="img/do_something.png">
   </a>
 </ion-view>

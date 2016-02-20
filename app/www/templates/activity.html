@@ -5,7 +5,7 @@
     </a>
   </ion-nav-buttons>
   <ion-content>
-    <div class="card">
+    <div class="card" ng-show="!isLoading()">
       <div class="item item-text-wrap text-center large-font" ng-click="goWebsite()">
         {{activity('name')}}
       </div>
@@ -16,25 +16,28 @@
         {{activity('description')}}
       </div>
     </div>
+    <div ng-show="isLoading()">
+      <img class="spinner" src="img/orange.png">
+    </div>
     <div class="list">
-      <div class="item item-icon-left">
+      <div class="item item-icon-left" ng-click="tooExpensive()">
         <i class="icon ion-social-usd"></i>
         Cost: {{activity('cost')}}
       </div>
-      <div class="item item-icon-left">
+      <div class="item item-icon-left" ng-click="tooManyPeople()">
         <i class="icon ion-ios-people"></i>
         Group Size: {{activity('groupSize')}}
       </div>
-      <div class="item item-icon-left">
+      <div class="item item-icon-left" ng-click="tooLong()">
         <i class="icon ion-android-time"></i>
         Duration: {{activity('duration')}}
       </div>
-      <div class="item item-icon-left">
+      <div class="item item-icon-left" ng-click="tooFarAway()">
         <i class="icon ion-location"></i>
         Distance: {{activity('distance')}}
       </div>
       <div class="item">
-        <div class="button button-bar button-positive">Nah, maybe something else</div>
+        <div class="button button-bar button-positive" ng-click="refresh()">Nah, maybe something else</div>
       </div>
     </div>
   </ion-content>

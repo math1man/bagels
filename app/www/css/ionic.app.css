@@ -26,6 +26,7 @@ $dark:                            #444 !default;
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
 */
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700);
 @font-face {
   font-family: "Ionicons";
   src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1");
@@ -9731,6 +9732,10 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.bar .title {
+  font-family: Quicksand, sans-serif;
+  font-size: x-large; }
+
 .large-font {
   font-size: xx-large;
   line-height: normal; }
@@ -9748,7 +9753,7 @@ ion-content {
   border: none; }
 
 .half-image {
-  width: 40%;
+  width: 40vw;
   margin: auto auto 20vw; }
 
 .dots-top {
@@ -9761,4 +9766,22 @@ ion-content {
 .dots-bottom {
   background: url(../img/dots_bottom.png) no-repeat center bottom;
   background-size: 100%;
-  height: auto; }
+  height: 78vw; }
+
+.spinner {
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+  width: 50%;
+  margin: 25%; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
