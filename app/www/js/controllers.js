@@ -78,7 +78,7 @@
     };
 
     $scope.goWebsite = function() {
-      if (Activity.activity.url != null) {
+      if (Activity.activity.url.length > 0) {
         $cordovaInAppBrowser.open(Activity.activity.url, '_system')
       }
     };
